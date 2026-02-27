@@ -33,11 +33,11 @@ public class plusminus01 {
 
         c = ++a + b-- ; // 여기서 모든 계산을 해야한다.
 
-        System.out.println("a : " + a); // 12
+        System.out.println("azzzzzz : " + a); // 12
         System.out.println("b : " + b); // 18
         System.out.println("c : " + c); // 12+19(b-- 후위감소로 마지막) =31 // 마지막 b의 값은  18
 
 
-        
+
     }
 }
