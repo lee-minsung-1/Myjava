@@ -16,10 +16,10 @@ public class practice0303 {
         result = x > y ? z - y : x + z; //
         System.out.println(result);
 
-        int x = 3, y = 8, z = 4;
-        int a = x > y ? x : y;
-        int max = a > z ? a : z;
-        System.out.println(max);
+//        int x = 3, y = 8, z = 4;
+//        int a = x > y ? x : y;
+//        int max = a > z ? a : z;
+//        System.out.println(max);
 
 
 
