@@ -1,29 +1,25 @@
 package ch04_class;
+//우리는매일매일, 김민재 감독, 100분 , 12000원, 멜로
 
 public class Lms01 {
+    private String title;
+    private String director;
+    private int time = 100 ;
 
-    private String name ;
-    private int age ;
-    private int hei ;
-    //통장으로 비유하면 잔액조회=getter, 입출금 setter.
-    public void setName (String _name){
-        name = _name;
-    }
-    public String getName (){
-        return name;
-    }
-    public void setAge(int _age){
-        age = _age;
-    }
-    public int getAge (){
-        return age;
-    }
-    public void setHei(int _hei){
-        hei = _hei;
-    }
-    public int getHei (){
-        return hei;
-    }
 
+    public Lms01 (String title, String director, int time){
+        this.title = title;
+        this.director = director;
+        this.time = time ;
+    };
+    public Lms01 (String title, String director){
+        this.title = title;
+        this.director = director;
+
+    };
+    public void display(){
+        System.out.println("제목:"+title+ "감독:"+director+"상영시간:"+time);
 }
-//이름:이민성, 나이:23살, 키:187
+}
+
+
