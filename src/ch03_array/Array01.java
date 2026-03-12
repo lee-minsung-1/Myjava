@@ -12,8 +12,16 @@ public class Array01 {
         bts[5]="슈가";
         bts[6]="제이홉";
 
+        System.out.println("배열요소 출력하기");
         for (int i = 0; i < bts.length ; i++) {
             System.out.println(bts[i]);
+        }
+//for (타입 단수이름: 복수이름){
+//선입 선출 (FIFO)
+//후입 선출 (LIFO)(프링글스)
+        System.out.println("향상된 for 구문");
+        for (String item: bts){
+            System.out.println(item);
         }
     }
 }

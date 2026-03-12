@@ -1,14 +1,12 @@
 package ch04_class;
 
-import java.util.Scanner;
-
 public class ProductMain_01 {
     static void main(String[] args) {
 
         //단계02 : 객체생성
         // 생성자 이름'은' '클래스이름'과 동일해야합니다
         // 클래스이름 객체이름 = new 생성자이름();
-        product_01 shin = new product_01(); //shin,blackbean이 객체.
+        Product01 shin = new Product01(); //shin,blackbean이 객체.
 
 
         //product_01 wt = new product_01();
@@ -18,7 +16,7 @@ public class ProductMain_01 {
         //그리고 그 shin이라는 객체가 가지고 있는 구조는
 
         //product black ; 을 생략할 수 있다.
-        product_01 blackbean = new product_01();
+        Product01 blackbean = new Product01();
 //shin 객체를 "참조" 헤서 내부의 필드 값에 "접근" 한다
         shin.name ="asdada";
 

@@ -1,9 +1,9 @@
 package ch04_class;
 
-public class product_01 { // 단계01 : 클래스 정의
+public class Product01 { // 단계01 : 클래스 정의
 
     //밑 변수들은 product라는 클래스의 멤버 변수이다.
-    String name ; // 상품명
+   public String name ; // 상품명
     int price ; // 단가
     String inputdate ;// 입고한 일자
 
