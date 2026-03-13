@@ -1,0 +1,25 @@
+package Semi;
+
+public class Yogurt extends Drink{
+    private String yogurtOrigin; // 요거트 원산지 (단위 = X)
+    private String milkQuality; // 우유 품질 (상, 중, 하) (단위 = X)
+
+    public Yogurt(String name, double price, String yogurtOrigin, String milkQuality) {
+        this.yogurtOrigin = yogurtOrigin; // 매개변수를 Yogurt서브클래스의 맴버변수에 재할당
+        this.milkQuality = milkQuality; // 매개변수를 Yogurt서브클래스의 맴버변수에 재할당
+        super(name, price); // 수퍼클래스의 생성자 호출 (공통분모)
+
+    }
+    @Override
+    public String toString() {
+        String menuFeature = super.toString() + ", 요거트 원산지 : " + yogurtOrigin + ", 우유 품질 : " + milkQuality;
+        return menuFeature ;
+    }
+
+    public void lowQuality(String lowOrigin, String lowMilk){
+        System.out.println("변동 사항 : 요거트 원산지(" + this.yogurtOrigin + " -> " + lowOrigin +
+                "), 우유 품질(" + this.milkQuality + " -> "	 + lowMilk + ")\n");
+        this.yogurtOrigin = lowOrigin;
+        this.milkQuality = lowMilk;
+    }
+}
